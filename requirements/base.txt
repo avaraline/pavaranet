@@ -1,0 +1,5 @@
+Django>=1.7
+psycopg2>=2.5.3
+bpython>=0.13
+django-braces>=1.4
+logutils>=0.3.3
