@@ -13,6 +13,8 @@ class AbstractBaseStats(models.Model):
     points = models.IntegerField(_('points'), default=0, editable=False)
     kills = models.PositiveIntegerField(_('kills'), default=0, editable=False)
     deaths = models.PositiveIntegerField(_('deaths'), default=0, editable=False)
+    boosters_used = models.PositiveIntegerField(_('boosters used'), default=0,
+        editable=False)
     missiles_fired = models.PositiveIntegerField(_('missiles fired'), default=0,
         editable=False)
     grenades_fired = models.PositiveIntegerField(_('grenades fired'), default=0,
