@@ -6,8 +6,8 @@ from pavaranet.social.models import Clan, Player
 
 class AbstractBaseStats(models.Model):
     """
-    A mixin class that adds the fields, properties, and methods for every
-    statistic we want to track.
+    An abstract base class that adds the fields, properties, and methods for
+    every statistic we want to track.
     """
     # TODO: Think of more things to track. Seconds on hill? Flags captured? etc.
     points = models.IntegerField(_('points'), default=0, editable=False)
