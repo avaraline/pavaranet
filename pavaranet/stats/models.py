@@ -17,9 +17,23 @@ class AbstractBaseStats(models.Model):
         editable=False)
     missiles_fired = models.PositiveIntegerField(_('missiles fired'), default=0,
         editable=False)
+    missiles_damage = models.FloatField(_('missile damage dealt'), default=0.0,
+        editable=False)
+    missiles_accuracy = models.FloatField(_('missile accuracy'), default=0.0,
+        editable=False)
     grenades_fired = models.PositiveIntegerField(_('grenades fired'), default=0,
         editable=False)
+    grenades_damage = models.FloatField(_('grenade damage dealt'), default=0.0,
+        editable=False)
+    grenades_accuracy = models.FloatField(_('grenade accuracy'), default=0.0,
+        editable=False)
     plasma_fired = models.PositiveIntegerField(_('plasma fired'), default=0,
+        editable=False)
+    plasma_damage = models.FloatField(_('plasma damage dealt'), default=0.0,
+        editable=False)
+    plasma_accuracy = models.FloatField(_('plasma accuracy'), default=0.0,
+        editable=False)
+    plasma_efficiency = models.FloatField(_('plasma efficiency'), default=0.0,
         editable=False)
 
     class Meta:
